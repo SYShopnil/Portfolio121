@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: justify !important;
+}
+.screenSize {
+  width: 100%;
+}
+.headerScreen {
+  width: 80%;
+}
+.footerScreen {
+  width: 80%;
+}
+.headerAndFooterMainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+.d-flex {
+  display: flex;
+}
+.d-center-verical {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,9 @@
+.asideWrap img {
+  height: 180px;
+  width: 180px;
+}
+.asideWrap .all {
+  border-bottom: 2px dashed #1e2a3a;
+  padding-bottom: 8%;
+  padding-top: 5%;
+}

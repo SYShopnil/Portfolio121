@@ -1,0 +1,9 @@
+.skillContentWrapper img {
+  height: 60px;
+  width: 60px;
+}
+.skillContentWrapper .skillWrapper {
+  box-shadow: -9px 10px 18px 10px rgba(215, 215, 215, 0.66);
+  -webkit-box-shadow: -9px 10px 18px 10px rgba(215, 215, 215, 0.66);
+  -moz-box-shadow: -9px 10px 18px 10px rgba(215, 215, 215, 0.66);
+}

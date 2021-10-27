@@ -1,0 +1,16 @@
+.footerMainWrap {
+  background-color: #2c2c2d;
+  color: #ffff;
+}
+.footerMainWrap .linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerMainWrap .linkWrapper a {
+  transition: all 0.2s ease-in-out;
+  color: #ffff;
+}
+.footerMainWrap .linkWrapper a:hover {
+  color: red;
+}

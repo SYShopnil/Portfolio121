@@ -1,0 +1,15 @@
+.mainSectionInnerWrap {
+  width: 90%;
+}
+
+.mainSectionTitle {
+  position: relative;
+}
+.mainSectionTitle::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: #c5e2fb;
+  left: -1%;
+}

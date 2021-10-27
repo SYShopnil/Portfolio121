@@ -1,0 +1,49 @@
+.wrapperHeader {
+  background-color: #1e2a3a;
+  color: #ffffff;
+}
+.innerWrapper {
+  flex-flow: row wrap;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.innerWrapper .link {
+  margin-bottom: 3%;
+  font-size: 115%;
+}
+.innerWrapper .titleWrap {
+  display: flex;
+  align-items: center;
+}
+
+.innerWrapper .socialLink {
+  margin-left: 6%;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.innerWrapper .socialLink:hover {
+  color: #5091ff;
+}
+.searchBarHeaderWrap input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 100%;
+}
+.search-container {
+  display: flex;
+}
+.searchBarHeaderWrap .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
