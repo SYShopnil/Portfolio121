@@ -135,11 +135,9 @@ function userNameValidation (data, name) {
 }
 
 // cancel button handler 
-const cancelButtonSelector = document.querySelector("#cancle")
-cancelButtonSelector.addEventListener ("click", (e) => {
-    e.preventDefault()
+function cancelController () {
     console.log(`Hello`);
-})
+}
 
 //password validation 
 function passwordValidation (data, name) {
