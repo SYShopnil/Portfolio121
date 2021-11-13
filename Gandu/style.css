@@ -1,3 +1,36 @@
 .submitButton {
   background-color: #605dc8;
 }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t-color {
+  color: #005c99;
+}
+.input-form {
+  width: 100%;
+  border: none;
+  background: #f1f1f1;
+  padding: 4%;
+}
+.submitButton {
+  display: block;
+  width: 100%;
+  background: #5c5cd6;
+  color: #ffffff;
+  padding: 3%;
+}
+.cancelButton {
+  display: block;
+  width: 100%;
+  background: #ff4d4d;
+  color: #ffffff;
+  padding: 3%;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

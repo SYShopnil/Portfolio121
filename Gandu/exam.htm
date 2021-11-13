@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumit Saha, Learn with Sumit" />
+    <meta name="description" content="We love JavaScript" />
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class = "wrapper" >
+       <div>
+            <!-- header wrapper -->
+            <header class = "t-color">
+                <h2>North South University</h2>
+                <h3>Registration Form</h3>
+                <h4>CSE 482 Sec:01 Lab</h4>
+                <h4>Name:Shahjalal Ekbal</h4>
+                <h4>Id:1712397642</h4>
+            </header>
+            
+            <!-- form wrapper -->
+            <section>
+                <!-- form part  -->
+                <form id="frm" action="" method="POST">
+                    <!-- user Name field -->
+                    <label for="userName">User name</label><br>
+                    <input id="userName" name="userName" type="text" placeholder="Enter Your Username"
+                        onchange="inputHandler(this.name)" class = "input-form"><br><br>
+            
+                    <!-- Password field -->
+                    <label for="userName">Password</label><br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password"
+                        onchange="inputHandler(this.name)" class = "input-form" ><br><br>
+            
+                    <!-- Re-type Password field -->
+                    <label for="re-typePassword">Re-type password</label><br>
+                    <input id="passwordRepeat" name="passwordRepeat" type="password" placeholder="Re-type your Password"
+                        onchange="inputHandler(this.name)" class = "input-form" ><br><br>
+            
+                    <!-- email part -->
+                    <label for="re-typePassword">Email:</label><br>
+                    <input id="email" name="email" type="ema" placeholder="Enter your mail"
+                        onchange="inputHandler(this.name)" class = "input-form"><br><br>
+    
+                    <!-- Contact no  -->
+                    <label for="name">Contact no:</label><br>
+                    <input id="contact" name="contact" type="text" placeholder="Enter your contact number"
+                        onchange="inputHandler(this.name)" class = "input-form"><br><br>
+            
+                    <!-- submit button -->
+                    <br>
+                    <br>
+                    <div class = "buttonWrapper" >
+                        <button class="submitButton" id="submit">Submit</button>
+                        <button class="cancelButton" id="cancle">Cancel</button>
+                    </div>
+                </form>
+            </section>
+       </div>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

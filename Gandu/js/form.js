@@ -40,7 +40,7 @@ const formData = {
 
 //patter 
 const formPattern = {
-    password: /^[a-zA-Z0-9]{8,30}$/,
+    password: /^[a-zA-Z0-9]{7,20}$/,
     contact: /^(?:\+88|01)?\d{11}\r?$/ ,
     email: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ 
 }
@@ -100,22 +100,22 @@ function mainValidationHandler (name, data) {
         alert (output.message)
     }
 }
-//name validation 
-function nameValidation (data, name) {
-    const inputData = data //store the input data here
-    if (inputData.length != 0 ) { //check is it empty or not
-        storeDataHandler(inputData, name) //store the name value in the form data
-        return {
-            status: true,
-            message: validationMessage.name.success
-        }
-    }else {
-        return {
-            status: false,
-            message: validationMessage.name.unsuccessful
-        } 
-    }
-}
+// //name validation 
+// function nameValidation (data, name) {
+//     const inputData = data //store the input data here
+//     if (inputData.length != 0 ) { //check is it empty or not
+//         storeDataHandler(inputData, name) //store the name value in the form data
+//         return {
+//             status: true,
+//             message: validationMessage.name.success
+//         }
+//     }else {
+//         return {
+//             status: false,
+//             message: validationMessage.name.unsuccessful
+//         } 
+//     }
+// }
 
 //user name validation 
 function userNameValidation (data, name) {
@@ -133,6 +133,13 @@ function userNameValidation (data, name) {
         }
     }
 }
+
+// cancel button handler 
+const cancelButtonSelector = document.querySelector("#cancle")
+cancelButtonSelector.addEventListener ("click", (e) => {
+    e.preventDefault()
+    console.log(`Hello`);
+})
 
 //password validation 
 function passwordValidation (data, name) {
