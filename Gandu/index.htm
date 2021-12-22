@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body> 
+<body>
     <!-- header wrapper -->
     <header>
         <h2>North South University</h2>
@@ -23,86 +23,66 @@
     <!-- form wrapper -->
     <section>
         <!-- form part  -->
-        <form id="frm" action="">
+        <form id="frm" action="connect.php" method="post">
             <!-- name field  -->
-            <label for="name">Name</label><br>
-            <input id="name" name="name" type="text" placeholder="Enter your name" onchange="inputHandler(this.name)"><br><br>
-        
+            <div>
+                <label for="name">Name</label>
+                <input class="inputBox" id="name" name="name" type="text" placeholder="Enter your name"
+                    onchange="inputHandler(this.name)" required>
+            </div>
+            <br>
             <!-- user Name field -->
-            <label for="userName">User name</label><br>
-            <input id="userName" name="userName" type="text" placeholder="Enter Your Username"
-                onchange="inputHandler(this.name)"><br><br>
-        
+            <div>
+                <label for="userName">User name</label>
+                <input class="inputBox" id="userName" name="userName" type="text" placeholder="Enter Your Username"
+                    onchange="inputHandler(this.name)" required >
+            </div>
+            <br>
             <!-- Password field -->
-            <label for="userName">Password</label><br>
-            <input id="password" name="password" type="password" placeholder="Enter Your Password"
-                onchange="inputHandler(this.name)"><br><br>
-        
+            <div>
+                <label for="userName">Password</label>
+                <input class="inputBox" id="password" name="password" type="password" placeholder="Enter Your Password"
+                    onchange="inputHandler(this.name)" required >
+            </div>
+            <br>
             <!-- Re-type Password field -->
-            <label for="re-typePassword">Re-type password</label><br>
-            <input id="passwordRepeat" name="passwordRepeat" type="password" placeholder="Re-type your Password"
-                onchange="inputHandler(this.name)"><br><br>
-        
-            <!-- email part -->
-            <label for="re-typePassword">Email:</label><br>
-            <input id="email" name="email" type="ema" placeholder="Enter your mail" onchange="inputHandler(this.name)"><br><br>
-        
+            <div>
+                <label for="re-typePassword">Re-type password</label>
+                <input class="inputBox" id="passwordRepeat" name="passwordRepeat" type="password"
+                   required  placeholder="Re-type your Password" onchange="inputHandler(this.name)">
+            </div>
+            <br>
             <!-- gender wrap -->
             <div>
                 <!-- Gender part -->
-                <label for="gender">Gender</label><br>
+                <label for="gender">Gender</label>
                 <!-- male -->
                 <input type="radio" id="male" name="gender" value="male" onchange="radioHandler(this.name, this.id)">
-                <label for="male">Male</label><br>
-        
+                <label for="male">Male</label>
+
                 <!-- female -->
-                <input type="radio" id="female" name="gender" value="female" onchange="radioHandler(this.name, this.id)">
-                <label for="female">Female</label><br>
-        
+                <input type="radio" id="female" name="gender" value="female"
+                    onchange="radioHandler(this.name, this.id)">
+                <label for="female">Female</label>
+
                 <!-- other -->
                 <input type="radio" id="other" name="gender" value="other" onchange="radioHandler(this.name, this.id)">
-                <label for="other">Other</label><br>
+                <label for="other">Other</label>
             </div>
-        
-            <!-- Programming skill -->
-            <label for="programmingSkill">Programming Skill</label><br>
-            <!-- Java -->
-            <input type="checkbox" id="java" name="skill" value="java" onchange="checkedHandler(this.name, this.id)">
-            <label for="male">Jave</label><br>
-        
-            <!-- JavaScript -->
-            <input type="checkbox" id="javaScript" name="skill" value="javaScript"
-                onchange="checkedHandler(this.name, this.id)">
-            <label for="female">Java Script</label><br>
-        
-            <!-- RUby -->
-            <input type="checkbox" id="ruby" name="skill" value="ruby" onchange="checkedHandler(this.name, this.id)">
-            <label for="other">Ruby</label><br>
-        
-            <!-- Contact no  -->
-            <label for="name">Contact no:</label><br>
-            <input id="contact" name="contact" type="text" placeholder="Enter your contact number"
-                onchange="inputHandler(this.name)"><br><br>
-        
-            <!-- college part -->
-            <label for="college">College</label><br>
-            <select name="college" id="college" onchange="inputHandler(this.name)">
-                <!-- Dhaka Imperial College -->
-                <option value="Dhaka Imperial College">Dhaka Imperial College</option>
-        
-                <!-- Mohammedbag Adorsho College -->
-                <option value="Mohammedbag Adorsho College">Mohammedbag Adorsho College</option>
-        
-                <!-- B. A. F. Shaheen College Kurmitola -->
-                <option value="B. A. F. Shaheen College Kurmitola">B. A. F. Shaheen College (Kurmitola)</option>
-        
-                <!-- Adamjee Cantonment College -->
-                <option value="Adamjee CantonmentCollege">Adamjee Cantonment College</option>
-            </select>
-            <!-- submit button -->
             <br>
-            <br>
-            <button class = "submitButton" id="submit">Submit</button>
+
+            <!-- contact number part -->
+            <label for="re-typePassword">Contact:</label>
+            <input class="inputBox" id="email" name="number" type="text" placeholder="Enter your number"
+                onchange="inputHandler(this.name)" required ><br><br>
+
+            <!-- email part -->
+            <label for="re-typePassword">Email:</label>
+            <input class="inputBox" id="email" name="email" type="ema" placeholder="Enter your mail"
+                onchange="inputHandler(this.name)" required ><br><br>
+
+            <input class="submitButtonn" type="submit"></input>
+            <button class="cancelButtons" id="cancel">Cancel</button>
         </form>
     </section>
     <script src="./js/form.js"></script>
